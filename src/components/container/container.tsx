@@ -1,5 +1,5 @@
 import React from 'react';
-import './container.css'
+import './container.scss'
 import { ContainerProps } from '../../interface/container';
 
 const Container: React.FC<ContainerProps> = ({ className = 'Container', children }) => {

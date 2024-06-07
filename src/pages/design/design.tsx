@@ -10,7 +10,9 @@ const Design: React.FC = () => {
             <Container>
                 <Title title="Title" fontSize={26} />
 
-                <Text text="Text" />
+                <Text>
+                    Text
+                </Text>
 
                 <Card
                     type="primary"
