@@ -17,7 +17,7 @@ export const Card: React.FC<CardProps> = ({
             {type === "primary" && <Title title={title} fontSize={20} className="Card__Title" />}
 
             <div className="Card__bottom">
-                <Text text={text} fontSize={14} />
+                <Text fontSize={14}>{text}</Text>
             </div>
         </div>
     )
@@ -32,7 +32,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
     return (
         <div className="Card">
-            <Text text={mainText} className="Card__Title" fontSize={14} />
+            <Text className="Card__Title" fontSize={14}>{mainText}</Text>
 
             <div className="Card__div">
                 <Title title={projectName} fontSize={20} />
@@ -42,7 +42,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                 </a>
             </div>
 
-            <Text text={text} className="Card__Title" fontSize={14} />
+            <Text className="Card__Title" fontSize={14}>{text}</Text>
         </div>
     )
 }

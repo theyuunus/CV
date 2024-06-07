@@ -1,17 +1,12 @@
-import React from "react";
+import React from 'react';
 import './text.scss'
-import { TextProps } from "../../interface/text";
+import { TextProps } from '../../interface/text';
 
 const Text: React.FC<TextProps> = ({
-    className,
-    text,
-    fontSize = 12,
+    children,
+    className
 }) => {
-    return (
-        <p className={`Text ${className}`} style={{ fontSize: fontSize }}>
-            {text}
-        </p>
-    );
+    return <p className={`Text ${className}`}>{children}</p>;
 };
 
-export default Text;
+export default Text

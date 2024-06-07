@@ -1,5 +1,5 @@
 export interface TextProps {
     className?: string;
-    text?: string;
+    children?: React.ReactNode;
     fontSize?: number;
 }
